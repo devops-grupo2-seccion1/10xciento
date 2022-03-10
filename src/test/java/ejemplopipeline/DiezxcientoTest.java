@@ -17,10 +17,14 @@ public class DiezxcientoTest {
 	public void testImpuesto() throws Exception {
 		assertEquals(0.135f, diezxciento.impuesto(diezxciento.sueldo), 0.001);
 	}
-
+	
 	@Test
 	public void testSaldoAhorro() throws Exception {
-
+		assertEquals(0.135f, diezxciento.impuesto(diezxciento.sueldo), 0.001);
 	}
-
+	
+	@Test
+	public void testSaldoAhorroError() throws Exception {
+		assertEquals(30, diezxciento.impuesto(diezxciento.sueldo),0.001);
+	}
 }
